@@ -60,8 +60,8 @@ static const Layout layouts[] = {
 // static const char *dmenucmd[] = { "$HOME/bin/yeganesh_run", NULL };
 static const char *dmenucmd[] = { "$HOME/bin/yeganesh_run", "-b", "-fn", "yeganesh -x -- -b -fn 'xft:Liberation Mono for Powerline:size=10", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 // static const char *dmenucmd[] = { "dmenu_run", "-b", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "urxvt", NULL };
-static const char *tmuxcmd[]  = { "urxvt", "-e", "tmux-attach", NULL };
+static const char *termcmd[]  = { "st", NULL };
+static const char *tmuxcmd[]  = { "st", "-e", "tmux-attach", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

@@ -1,7 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+//static const char font[]       = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char font[]         = "-*-liberation mono-medium-r-*-*-17-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -13,10 +14,11 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const Bool showsystray       = True;     /* False means no systray */
 static const Bool showbar           = True;     /* False means no bar */
-static const Bool topbar            = False;     /* False means bottom bar */
+static const Bool topbar            = False;    /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "term", "web", "emacs", "pass", "misc", "6", "7", "8", "9" };
+static const char *tags[] = { "term", "web", "emacs", "pass", "misc",
+                              "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):

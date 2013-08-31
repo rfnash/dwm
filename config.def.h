@@ -27,9 +27,12 @@ static const Rule rules[] = {
 	/* class        instance    title       tags mask     isfloating   monitor */
      // { "Gimp",       NULL,       NULL,       0,            True,        -1 },
 	{ "urxvt",      NULL,       NULL,       0,            False,       -1 },
-	{ "pwsafe-gui", NULL,       NULL,       1 << 3,       False,       -1 },
+	{ "pwsafe",     NULL,       NULL,       1 << 3,       False,       -1 },
 	{ "Emacs",      NULL,       NULL,       1 << 2,       False,       -1 },
 	{ "Navigator",  NULL,       NULL,       1 << 1,       False,       -1 },
+	{ "Iceweasel",  NULL,       NULL,       1 << 1,       False,       -1 },
+	{ "dwb",        NULL,       NULL,       1 << 1,       False,       -1 },
+	{ "hexchat",    NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "Conkeror",   NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "Bitcasa",    NULL,       NULL,       1 << 8,       False,       -1 },
 };

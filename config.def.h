@@ -16,7 +16,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = False;    /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "term", "web", "emacs", "pass", "misc",
+static const char *tags[] = { "emacs", "web", "term", "pass", "misc",
                               "6", "7", "8", "9" };
 
 static const Rule rules[] = {
@@ -26,9 +26,9 @@ static const Rule rules[] = {
 	 */
 	/* class        instance    title       tags mask     isfloating   monitor */
      // { "Gimp",       NULL,       NULL,       0,            True,        -1 },
-	{ "urxvt",      NULL,       NULL,       0,            False,       -1 },
+	{ "urxvt",      NULL,       NULL,       1 << 2,       False,       -1 },
 	{ "pwsafe",     NULL,       NULL,       1 << 3,       False,       -1 },
-	{ "Emacs",      NULL,       NULL,       1 << 2,       False,       -1 },
+	{ "Emacs",      NULL,       NULL,       0,            False,       -1 },
 	{ "Navigator",  NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "Iceweasel",  NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "dwb",        NULL,       NULL,       1 << 1,       False,       -1 },
@@ -120,4 +120,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

@@ -28,7 +28,7 @@ static const Rule rules[] = {
      // { "Gimp",       NULL,       NULL,       0,            True,        -1 },
 	{ "urxvt",      NULL,       NULL,       1 << 2,       False,       -1 },
 	{ "pwsafe",     NULL,       NULL,       1 << 3,       False,       -1 },
-	{ "Emacs",      NULL,       NULL,       0,            False,       -1 },
+      //{ "Emacs",      NULL,       NULL,       0,            False,       -1 },
 	{ "Navigator",  NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "Iceweasel",  NULL,       NULL,       1 << 1,       False,       -1 },
 	{ "dwb",        NULL,       NULL,       1 << 1,       False,       -1 },

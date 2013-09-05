@@ -187,8 +187,10 @@ char* mktimes(char *fmt, const char *tzname) {
     char buf[129];
     time_t tim;
     struct tm *timtm;
+    int secs;
     int geektime;
     int geekday;
+    double swatch;
 
     tim = time(NULL);
     timtm = gmtime(&tim);
@@ -196,8 +198,10 @@ char* mktimes(char *fmt, const char *tzname) {
         perror("gmtime");
         exit(1);
     }
-    geektime = (timtm->tm_hour*3600+timtm->tm_min*60+timtm->tm_sec)*65536/86400;
+    secs = timtm->tm_hour*3600+timtm->tm_min*60+timtm->tm_sec;
+    geektime = secs*65536/86400;
     geekday = timtm->tm_yday;
+    swatch = secs*1000/86400.0;
 
     bzero(buf, sizeof(buf));
     setenv("TZ", tzname, 1);
@@ -213,7 +217,7 @@ char* mktimes(char *fmt, const char *tzname) {
         exit(1);
     }
 
-    return smprintf("%s | 0x%04X 0x%03X", buf, geektime, geekday);
+    return smprintf("%s | 0x%04X 0x%03X @%3.2f", buf, geektime, geekday, swatch);
 }
 
 double getnormvolume(snd_mixer_elem_t *elem) {

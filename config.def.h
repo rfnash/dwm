@@ -2,13 +2,13 @@
 
 /* appearance */
 static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
-                                                    // My color name
-static const char normbordercolor[] = "#444444";  // lighter grey
-static const char normbgcolor[]     = "#222222";  // darkest grey
-static const char normfgcolor[]     = "#bbbbbb";  // lighterer grey
-static const char selbordercolor[]  = "#005577";  // greyish blue
-static const char selbgcolor[]      = "#005577";  // greyish blue
-static const char selfgcolor[]      = "#eeeeee";  // lightest grey
+                                                    // X11 16-color name
+static const char normbordercolor[] = "#6c71c4";    // red
+static const char normbgcolor[]     = "#073642";    // black
+static const char normfgcolor[]     = "#839496";    // brightblue
+static const char selbordercolor[]  = "#268bd2";    // blue
+static const char selbgcolor[]      = "#268bd2";    // blue
+static const char selfgcolor[]      = "#fdf6e3";    // white
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systrayspacing = 2;   /* systray spacing */

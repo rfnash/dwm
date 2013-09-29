@@ -5,7 +5,7 @@ static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*
                                                     // X11 16-color name
 static const char normbordercolor[] = "#6c71c4";    // red
 static const char normbgcolor[]     = "#073642";    // black
-static const char normfgcolor[]     = "#839496";    // brightblue
+static const char normfgcolor[]     = "#93a1a1";    // brightcyan
 static const char selbordercolor[]  = "#268bd2";    // blue
 static const char selbgcolor[]      = "#268bd2";    // blue
 static const char selfgcolor[]      = "#fdf6e3";    // white

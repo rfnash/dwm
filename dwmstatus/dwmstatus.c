@@ -44,8 +44,8 @@ static const char *energy_full = "/sys/class/power_supply/BAT0/charge_full_desig
  * static const char *charge_full = "/sys/class/power_supply/BAT0/charge_full";
  */
 
-static const char *operstate = "/sys/class/net/wlan0/operstate";
-static const char *wifi_sig = "/sys/class/net/wlan0/wireless/link";
+static const char *operstate = "/sys/class/net/wlp12s0/operstate";
+static const char *wifi_sig = "/sys/class/net/wlp12s0/iflink";
 
 static const char *soundcard = "default";
 static const char *soundelement = "Master";
@@ -305,7 +305,7 @@ int main(void) {
         wifi = getsignalstrength();
         batt = getbattery();
         volume = getvolume();
-        temp = gettemperature("/sys/class/hwmon/hwmon0/temp1_input");
+        temp = gettemperature("/sys/class/thermal/thermal_zone0/temp");
         tmny = mktimes("%a %d %b %H:%M:%S", tzny);
 
         /* status = smprintf("\x8D   | \x8F | \x90 | \x9D | \x81 | %s", tmny); */
